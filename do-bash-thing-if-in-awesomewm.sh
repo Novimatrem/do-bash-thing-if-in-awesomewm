@@ -15,7 +15,8 @@ echo $ISAWESOMEORNOT
 
 if [ $ISAWESOMEORNOT -o "string" ]
 then
-echo "You are using awesomewm, run code." && echo "put awesome specific bash code you wish to run here"
+echo "You are using awesomewm, run code." && echo "put awesome specific bash code you wish to run here" &
+exit
 if ! [ $ISAWESOMEORNOT -o "string" ]
 then
 echo "You are not using awesomewm, don't run code. Exiting." && exit
@@ -23,4 +24,3 @@ fi
 fi
 echo "Code bypassed without success. Must not be awesome. Don't run code." && exit
 exit
-
